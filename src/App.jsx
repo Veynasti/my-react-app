@@ -1,16 +1,20 @@
-// import "./App.css";
-
-// function App() {
-//   return <div className="App"></div>
-// }
-
-// export default App;
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex justify-center bg-blue-500 min-h-screen items-center">
-      <div>gini aja dulu</div>
-    </div>
+    <>
+      <Navbar title="MovieFlix" />
+
+      <Hero
+        title="Temukan Film Favoritmu"
+        description="Jelajahi berbagai film terbaik dengan rating tinggi."
+        buttonText="Lihat Film"
+      />
+
+      <Footer text="© 2026 MovieFlix" />
+    </>
   );
 }
 
